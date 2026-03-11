@@ -1,0 +1,47 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "precis-summary"
+version = "0.1.0"
+description = "Fast extractive summarization via RAKE keyword extraction"
+requires-python = ">=3.11"
+license = "GPL-3.0-or-later"
+authors = [{name = "Reto Stamm", email = "reto@retostamm.com"}]
+readme = "README.md"
+keywords = ["rake", "keyword-extraction", "summarization", "nlp"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Text Processing :: Linguistic",
+]
+
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/retospect/precis-summary"
+Repository = "https://github.com/retospect/precis-summary"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "black>=24.0",
+    "ruff>=0.5",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/precis_summary"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.black]
+line-length = 88
+
+[tool.ruff]
+line-length = 88
