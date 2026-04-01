@@ -1,7 +1,5 @@
 """Tests for RAKE keyword extraction."""
 
-import pytest
-
 from precis_summary.rake import (
     STOPWORDS,
     _score_phrases,

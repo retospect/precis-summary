@@ -68,11 +68,10 @@ STOPWORDS: frozenset[str] = frozenset({
     "others", "part", "perhaps", "please", "put", "rather", "really",
     "regarding", "said", "say", "says", "second", "see", "seem", "seemed",
     "seems", "seen", "several", "shall", "show", "showed", "shown",
-    "shows", "since", "something", "sometimes", "still", "take", "taken",
+    "shows", "since", "something", "sometimes", "take", "taken",
     "tell", "therefore", "thing", "things", "think", "third", "thus",
     "together", "took", "toward", "towards", "try", "two", "unless",
     "various", "well", "went", "whether", "without", "work", "works",
-    "yet",
 })
 # fmt: on
 
